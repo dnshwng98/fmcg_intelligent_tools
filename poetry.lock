@@ -477,7 +477,6 @@ description = "Cross-platform colored terminal text."
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 groups = ["main"]
-markers = "sys_platform == \"win32\" or platform_system == \"Windows\""
 files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
@@ -2349,7 +2348,6 @@ description = "Python for Window Extensions"
 optional = false
 python-versions = "*"
 groups = ["main"]
-markers = "sys_platform == \"win32\" and platform_python_implementation != \"PyPy\""
 files = [
     {file = "pywin32-311-cp310-cp310-win32.whl", hash = "sha256:d03ff496d2a0cd4a5893504789d4a15399133fe82517455e78bad62efbb7f0a3"},
     {file = "pywin32-311-cp310-cp310-win_amd64.whl", hash = "sha256:797c2772017851984b97180b0bebe4b620bb86328e8a884bb626156295a63b3b"},
@@ -2380,7 +2378,6 @@ description = "Pseudo terminal support for Windows from Python."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
-markers = "os_name == \"nt\""
 files = [
     {file = "pywinpty-2.0.15-cp310-cp310-win_amd64.whl", hash = "sha256:8e7f5de756a615a38b96cd86fa3cd65f901ce54ce147a3179c45907fa11b4c4e"},
     {file = "pywinpty-2.0.15-cp311-cp311-win_amd64.whl", hash = "sha256:9a6bcec2df2707aaa9d08b86071970ee32c5026e10bcc3cc5f6f391d85baf7ca"},
@@ -3107,7 +3104,6 @@ description = "Filesystem events monitoring"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
-markers = "platform_system != \"Darwin\""
 files = [
     {file = "watchdog-6.0.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d1cdb490583ebd691c012b3d6dae011000fe42edb7a82ece80965b42abd61f26"},
     {file = "watchdog-6.0.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:bc64ab3bdb6a04d69d4023b29422170b74681784ffb9463ed4870cf2f3e66112"},
@@ -3200,4 +3196,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "b9f85b31466c5d3a4d5fb0567fede79c15d0d297fb8c02547735cbd32b275472"
+content-hash = "a0c438f892cd9a3f7181400b4ef07e176cecde7ba93c4600992e945a208ee8ee"
