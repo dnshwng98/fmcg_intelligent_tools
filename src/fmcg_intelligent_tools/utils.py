@@ -1,3 +1,5 @@
+import os.path
+
 import kagglehub
 import numpy as np
 import pandas as pd
@@ -7,7 +9,8 @@ from constants import SEASON_MONTH_PAIR, SUB_SEASON_MONTH_PAIR
 
 def download_dataset(dataset_url: str) -> pd.DataFrame:
     path = kagglehub.dataset_download(dataset_url)
-    fmcg_dataset = pd.read_csv(path + "\\FMCG_2022_2024.csv", parse_dates=["date"])
+    full_path = os.path.join(path, "FMCG_2022_2024.csv")
+    fmcg_dataset = pd.read_csv(full_path, parse_dates=["date"])
     fmcg_dataset.sort_values(by=["date", "category", "brand", "segment", "sku", "region", "channel"])
     fmcg_dataset.reset_index(drop=True, inplace=True)
 
